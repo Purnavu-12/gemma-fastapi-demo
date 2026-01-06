@@ -1,5 +1,5 @@
 # Gemma-fastapi-demo
-"Local Gemma2 2B-IT Chat API with Ollama + FastAPI "
+"Local Gemma2 2B Chat API with Ollama + FastAPI "
 
 ## Gemma2 FastAPI Chat Demo 🔥
 
@@ -21,7 +21,7 @@ Exploring Gemma models and building developer tools .
 
 ## Quick Start
 1. Install Ollama: https://ollama.com
-2. `ollama run gemma2:2b-it`
+2. `ollama run gemma2:2b`
 3. In another terminal: `ollama serve`
 4. `pip install -r requirements.txt`
 5. `python app.py`
