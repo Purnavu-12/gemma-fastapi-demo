@@ -1,5 +1,5 @@
 # Gemma-fastapi-demo
-"Local Gemma2 2B-IT Chat API with Ollama + FastAPI | GSoC 2026 Prep @ Google DeepMind 🚀"
+"Local Gemma2 2B-IT Chat API with Ollama + FastAPI "
 
 ## Gemma2 FastAPI Chat Demo 🔥
 
