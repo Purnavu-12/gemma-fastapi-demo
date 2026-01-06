@@ -396,7 +396,7 @@
         const welcome = document.getElementById('welcome');
         let messageCount = 0;
 
-        // Auto-resize textarea
+
         input.addEventListener('input', function() {
             this.style.height = 'auto';
             this.style.height = Math.min(this.scrollHeight, 200) + 'px';
@@ -412,22 +412,20 @@
             const message = input.value.trim();
             if (!message || sendBtn.disabled) return;
 
-            // Hide welcome screen on first message
             if (messageCount === 0) {
                 welcome.style.display = 'none';
             }
             messageCount++;
 
-            // Disable input
+
             input.disabled = true;
             sendBtn.disabled = true;
 
-            // Add user message
+
             addMessage(message, 'user');
             input.value = '';
             input.style.height = 'auto';
 
-            // Add typing indicator
             const typingDiv = addTypingIndicator();
 
             try {
@@ -438,10 +436,9 @@
                 });
                 const data = await response.json();
                 
-                // Remove typing indicator
                 chat.removeChild(typingDiv);
                 
-                // Add AI response
+
                 if (data.response.startsWith('Error:')) {
                     addErrorMessage(data.response);
                 } else {
@@ -451,7 +448,8 @@
                 chat.removeChild(typingDiv);
                 addErrorMessage('Could not connect to the server. Please ensure FastAPI is running on port 8000.');
             } finally {
-                // Re-enable input
+
+                
                 input.disabled = false;
                 sendBtn.disabled = false;
                 input.focus();
@@ -554,7 +552,7 @@
             chat.scrollTop = chat.scrollHeight;
         }
 
-        // Enter to send, Shift+Enter for new line
+
         input.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' && !e.shiftKey && !input.disabled) {
                 e.preventDefault();
@@ -562,8 +560,9 @@
             }
         });
 
-        // Focus input on load
+
         input.focus();
     </script>
 </body>
+
 </html>
