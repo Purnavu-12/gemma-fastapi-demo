@@ -28,3 +28,6 @@ Exploring Gemma models and building developer tools .
 6. Open http://127.0.0.1:8000/docs
 
 Excited about Gemma ecosystem! 🚀
+
+
+<img width="517" height="539" alt="Screenshot 2026-01-07 162628" src="https://github.com/user-attachments/assets/b50e02cd-496d-416e-abb3-b2830cdb83d1" />
